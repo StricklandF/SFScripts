@@ -108,8 +108,7 @@ function isVideo(o) {
   else {
     let type = parseEml(o?.n6F153515154?.n7F172660663) || parseEml(o?.n6F153515154?.n7F172660663?.n8F3);
     if (/_ads?\.|ads?_|video_display_full|landscape_image|shorts|shelf_header/.test(type)) flag = false;
-    if (flag && !/cell_divider|_video|comment_thread/.test(type)) 
-     // console.log(type); // 用于排查遗留的广告类型
+    // if (flag && !/cell_divider|_video|comment_thread/.test(type)) console.log(type); // 用于排查遗留的广告类型
   }
   if (!flag) needProcessFlag = true;
   return flag;
