@@ -98,9 +98,9 @@ function removeAd(itemObject) {
   if (itemObject?.n5F1) itemObject.n5F1 = itemObject.n5F1?.filter((o) => isVideo(o));
 }
 
-function removeBanner(itemObject) {
-  if (itemObject?.g3F1) itemObject.g3F1 = itemObject.g3F1?.filter((o) => isNotUpload(o));
-}
+// function removeBanner(itemObject) {
+  // if (itemObject?.g3F1) itemObject.g3F1 = itemObject.g3F1?.filter((o) => isNotUpload(o));
+// }
 
 function isVideo(o) {
   let flag = true;
