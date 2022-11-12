@@ -1,2 +1,2 @@
 # Scripts
-Some scripts for cracking or unlocking App services
+Collection of some useful scripts.
