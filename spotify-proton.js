@@ -25,7 +25,7 @@ if(url.includes("bootstrap/v1/bootstrap") && method === postMethod){
 } else {
     $notification.post('spotify解锁premium', "路径/请求方法匹配错误:", method + "," + url);
 }
-console.log(`${body.byteLength}---${body.buffer.byteLength}`);
+//console.log(`${body.byteLength}---${body.buffer.byteLength}`);
 if(isQuanX){
     $done({bodyBytes: body.buffer.slice(body.byteOffset, body.byteLength + body.byteOffset)});
 } else {
