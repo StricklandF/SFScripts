@@ -2,7 +2,7 @@
 [rewrite_local]
   
 # Boom Unlock
-^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url script-response-body 
+^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url script-response-body https://raw.githubusercontent.com/StricklandF/SFScripts/main/Boom.js
 
 [mitm] 
 hostname=apimboom2.globaldelight.net
