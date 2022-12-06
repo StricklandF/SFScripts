@@ -3,8 +3,8 @@
 [rewrite_local]
 
 # ～ ScannerPro Unlock
-^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/(\$RCAnonymousID\%)?(\w)+$ url script-response-body 
-^https?:\/\/api\.revenuecat\.com\/v\d\/receipts$ url script-response-body 
+^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/(\$RCAnonymousID\%)?(\w)+$ url script-response-body https://raw.githubusercontent.com/StricklandF/SFScripts/main/Scannerpro.js
+^https?:\/\/api\.revenuecat\.com\/v\d\/receipts$ url script-response-body https://raw.githubusercontent.com/StricklandF/SFScripts/main/Scannerpro.js
 
 [mitm] 
 
