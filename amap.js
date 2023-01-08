@@ -1,4 +1,5 @@
-// 2023-01-07 13:28
+// Anti-Ad Script for Amap Map
+// Only remove splash screen Ad & main page banner Ad (2023-01-08 15:02)
 
 if (!$response.body) $done({});
 const url = $request.url;
@@ -23,13 +24,13 @@ if (url.includes("/msgbox/pull")) {
     //     obj.data.pull3.msgs.starttime = 2208960000; // Unix 时间戳 2040-01-01 00:00:00
     //     obj.data.pull3.msgs.expiretime = 2209046399; // Unix 时间戳 2040-01-01 23:59:59
     //   }
-  } else if (url.includes("/shield/dsp/profile/index/nodefaasv3")) {
-    // 高德地图-我的
-    if (obj.data.cardList) {
-      obj.data.cardList = obj.data.cardList.filter((item) => {
-        return (
-          // item.dataKey === "AnnualBillCardV2" || // 年度报告
-          item.dataKey === "MyOrderCard" // 我的订单
+ // } else if (url.includes("/shield/dsp/profile/index/nodefaasv3")) {
+ //   // 高德地图-我的
+ //   if (obj.data.cardList) {
+ //     obj.data.cardList = obj.data.cardList.filter((item) => {
+ //       return (
+ //         // item.dataKey === "AnnualBillCardV2" || // 年度报告
+ //         item.dataKey === "MyOrderCard" // 我的订单
           // item.dataKey === "GdRecommendCard" || // 高德推荐
           // item.dataKey === "SceneVehicleCard_recommend" || // 我的车辆
           // item.dataKey === "SceneVehicleCard_function" || // 我的车辆
@@ -37,14 +38,14 @@ if (url.includes("/msgbox/pull")) {
           // item.dataKey === "GameExcitation" || // 小德爱消除
           // item.dataKey === "GoodsShelvesCard" || // 精选服务
           // item.dataKey === "DiyMap_function" || // DIY 地图
-        );
-      });
-    }
-  } else if (url.includes("/shield/search/new_hotword")) {
-    // 高德地图-搜索框
-    if (obj.data.header_hotword) {
-      obj.data.header_hotword = [];
-    }
+  //      );
+  //    });
+  //  }
+ // } else if (url.includes("/shield/search/new_hotword")) {
+ //   // 高德地图-搜索框
+ //   if (obj.data.header_hotword) {
+ //     obj.data.header_hotword = [];
+ //   }
   } else if (url.includes("/valueadded/alimama/splash_screen")) {
     // 高德地图-开屏广告
     if (obj.data.ad) {
