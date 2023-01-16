@@ -4792,15 +4792,15 @@
     fromBinary(binaryBody2) {
       this.message = Guide.fromBinary(binaryBody2);
     }
-    pure() {
-      this.iterate(this.message, "g3F1", (obj) => {
-        for (let i = obj.g3F1.length - 1; i >= 0; i--) {
-          if (this.isUpload(obj.g3F1[i])) {
-            obj.g3F1.splice(i, 1);
-          }
-        }
-      });
-    }
+   // pure() {
+     // this.iterate(this.message, "g3F1", (obj) => {
+       // for (let i = obj.g3F1.length - 1; i >= 0; i--) {
+         // if (this.isUpload(obj.g3F1[i])) {
+           // obj.g3F1.splice(i, 1);
+         // }
+       // }
+     // });
+   // }
     toBinary() {
       this.body = Guide.toBinary(this.message);
     }
