@@ -14,7 +14,7 @@ For Quantumult-X 598+ ONLY!!
 
 [task_local]
 
-event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体-解锁查询, img-url=checkmark.seal.system, enabled=true
+event-interaction https://raw.githubusercontent.com/StricklandF/SFScripts/main/Media-ChatGPTcheck.js, tag=Media+ChatGPT Check, img-url=checkmark.seal.system, enabled=true
 
 @XIAO_KOP
 
