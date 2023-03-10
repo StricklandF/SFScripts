@@ -56,6 +56,25 @@ if (url.includes("/msgbox/pull")) {
       }
     }
   }
+  else if (url.includes("/promotion-web/resource")) {
+  // 打车页面弹窗
+  let item = [
+    "alpha", // 出行优惠套餐
+    "banner",
+    "bravo", // 第三方推广 喜马拉雅月卡
+    "bubble",
+    "charlie", // 横版推广 单单立减 领专属优惠 体验问卷
+    "icon",
+    "popup",
+    "push", // 顶部通知 发单立享优惠
+    "tips"
+  ];
+  if (obj.data) {
+    item.forEach((i) => {
+      delete obj.data[i];
+    });
+  }
+}
 }
 
 body = JSON.stringify(obj);
