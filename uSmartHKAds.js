@@ -6,14 +6,16 @@ let obj = JSON.parse($response.body);
 
 if (url.includes("/jy-ipo-server/api/ipo-list/v2")) {
     if (obj?.data?.list?.length > 0) {
-        for (let item of obj.data.list) {
-            if (item?.remainingTime) {
-                item.remainingTime = 0;
-            }
-            if (item?.ecmEndTime) {
-                item.ecmEndTime = "2000-10-01 00:00:00";
-            }
-        }
+        obj.data.list = [];
+    }
+    if (obj?.data?.pageSize) {
+        obj.data.pageSize = 0;
+    }
+    if (obj?.data?.total) {
+        obj.data.total = 0;
+    }
+    if (obj?.data?.pageNum) {
+        obj.data.pageNum = 0;
     }
 } else if (url.includes("/message-center/api/v2/getmsg")) {
     const items = ["news"];
