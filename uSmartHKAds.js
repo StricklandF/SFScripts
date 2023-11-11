@@ -1,4 +1,4 @@
-// Removes IPO popup, bottom banner, news notification of uSmart HK 2023-11-03
+// Removes IPO popups, bottom banner, news notification of uSmart HK 2023-11-05
 
 const url = $request.url;
 if (!$response.body) $done({});
