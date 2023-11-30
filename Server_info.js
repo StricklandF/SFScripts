@@ -4,7 +4,7 @@
  *
  *  配置：
  *  [task_local]
- *  event-interaction https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/scripts/server_info.js, tag=节点详情查询, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/qure/color/Back.png, enabled=true
+ *  event-interaction https://raw.githubusercontent.com/StricklandF/SFScripts/main/Server_info.js, tag=Node Info, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/qure/color/Back.png, enabled=true
  *  使用：配置好以后长按节点执行脚本，如果节点类型的ISP进行大致的判断
  *  因为显示详细ISP的网站需要付费（ipinfo.io），所以只能找个替代的网站（www.cz88.net)
  *
