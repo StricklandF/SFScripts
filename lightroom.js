@@ -2,7 +2,7 @@
 ## Lr Adobe Lightroom+ 解锁订阅
 
 [rewrite_local]
-^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/lightroom.js
+^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body https://raw.githubusercontent.com/StricklandF/SFScripts/main/lightroom.js
 
 [mitm]
 hostname = photos.adobe.io
