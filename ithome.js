@@ -2,7 +2,7 @@
 
 /**
 [rewrite_local]
-^https:\/\/napi\.ithome\.com\/api\/(news\/index|topmenu\/getfeeds) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/ithome.js
+^https:\/\/napi\.ithome\.com\/api\/(news\/index|topmenu\/getfeeds) url script-response-body https://raw.githubusercontent.com/StricklandF/SFScripts/main/ithome.js
 
 [mitm]
 hostname = napi.ithome.com
