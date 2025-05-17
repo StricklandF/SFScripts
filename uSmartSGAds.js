@@ -1,16 +1,17 @@
-// 2023-12-12 11:00
+// 2025-05-17 11:41
 
 const url = $request.url;
 if (!$response.body) $done({});
 let obj = JSON.parse($response.body);
 
-if (url.includes("/activity-server-dolphin/api/get-banner-app/")) {
+if (url.includes("/activity-server-sg/api/get-banner-app/")) {
   if (obj?.data?.dataList?.length > 0) {
     // 顶部banner
     obj.data.dataList = [];
   }
-} else if (url.includes("/activity-server-dolphin/api/get-flow-window/")) {
+} else if (url.includes("/activity-server-sg/api/get-flow-window/")) {
   if (obj?.data?.dataList?.length > 0) {
+    // 首页弹窗
     obj.data.dataList = [];
   }
 } else if (url.includes("/message-center/api/v2/getmsg")) {
