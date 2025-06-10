@@ -139,7 +139,7 @@ if (typeof $response !== "undefined") {
 
     body = JSON.stringify(data);
   } catch (e) {
-    console.log("脚本执行出错: " + e.message);
+    //console.log("脚本执行出错: " + e.message);
   }
 
   $done({ body });
