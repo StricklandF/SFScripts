@@ -67,7 +67,7 @@ if (typeof $response !== "undefined") {
       if (entries.module_float_show) {
         entries.module_float_show.switch = 0;
       }
-      // 嵌套的每一个switch
+      // --- 嵌套的每一个switch ---
       if (entries.module_float_show && entries.module_float_show.modules) {
         if (entries.module_float_show.modules.pdf) {
           entries.module_float_show.modules.pdf.switch = 0;
@@ -81,6 +81,10 @@ if (typeof $response !== "undefined") {
         if (entries.module_float_show.modules.ppt) {
           entries.module_float_show.modules.ppt.switch = 0;
         }
+      }
+      // --- 扫描PDF的OCR场景化引导 ---
+      if (entries.convert_func_switch) {
+        entries.convert_func_switch.pdf_scan_ocr_scene_switch = false;
       }
       // --- 评分引导弹窗 ---
       if (entries.rate_guide) {
