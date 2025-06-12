@@ -1,6 +1,7 @@
-#AntiAds for ABC
-# Reinstall App for script to work.
-
+/********************************
+Anti-Ads for ABC
+Please note that you may need to reinstall app for script to work.
+********************************/
 
 const url = $request.url;
 const header = $request.headers;
