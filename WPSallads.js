@@ -122,6 +122,54 @@ if (typeof $response !== "undefined") {
         entries.convert_func_switch.pure_image_pdf = false;
         entries.convert_func_switch.pdf_scan_ocr_run_switch = false;
       }
+      if (entries.pdf_ocr_scan_global_001) {
+        entries.pdf_ocr_scan_global_001.display_position = [];
+        entries.pdf_ocr_scan_global_001.display_scenario = "";
+        entries.pdf_ocr_scan_global_001.control_codes = [];
+        entries.pdf_ocr_scan_global_001.display_duration = 0;
+
+        entries.pdf_ocr_scan_global_001.position = "";
+        entries.pdf_ocr_scan_global_001.priority = 0;
+        entries.pdf_ocr_scan_global_001.style = "";
+        entries.pdf_ocr_scan_global_001.jump_url = "";
+        entries.pdf_ocr_scan_global_001.icon = "";
+        entries.pdf_ocr_scan_global_001.content = {};
+        entries.pdf_ocr_scan_global_001.button_text = {};
+      }
+
+      if (entries.ai_value_added_001) {
+        entries.ai_value_added_001.display_position = [];
+        entries.ai_value_added_001.display_scenario = "";
+        entries.ai_value_added_001.control_codes = [];
+        entries.ai_value_added_001.interval_days = 9999;
+        entries.ai_value_added_001.display_count = 0;
+        entries.ai_value_added_001.display_duration = 0;
+
+        entries.ai_value_added_001.position = "";
+        entries.ai_value_added_001.priority = 0;
+        entries.ai_value_added_001.style = "";
+        entries.ai_value_added_001.jump_url = "";
+        entries.ai_value_added_001.icon = "";
+        entries.ai_value_added_001.content = {};
+        entries.ai_value_added_001.button_text = {};
+      }
+
+      if (entries.pdf_edit_pro_001) {
+        entries.pdf_edit_pro_001.display_position = [];
+        entries.pdf_edit_pro_001.display_scenario = "";
+        entries.pdf_edit_pro_001.control_codes = [];
+        entries.pdf_edit_pro_001.interval_days = 9999;
+        entries.pdf_edit_pro_001.display_count = 0;
+        entries.pdf_edit_pro_001.display_duration = 0;
+        
+        entries.pdf_edit_pro_001.position = "";
+        entries.pdf_edit_pro_001.priority = 0;
+        entries.pdf_edit_pro_001.style = "";
+        entries.pdf_edit_pro_001.jump_url = "";
+        entries.pdf_edit_pro_001.icon = "";
+        entries.pdf_edit_pro_001.content = {};
+        entries.pdf_edit_pro_001.button_text = {};
+      }
     }
 
     // --- 重新转义 ---
@@ -146,3 +194,4 @@ if (typeof $response !== "undefined") {
 } else {
   $done({});
 }
+
