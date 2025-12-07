@@ -129,7 +129,23 @@ if (typeof $response !== "undefined") {
         entries.float_ad_config = "{}";
       }
 
-    // --- 修改结束 ---
+      // --- 首页弹窗内容删除 ---
+      if (entries.app_home_operation_modal) {
+        const config = entries.app_home_operation_modal;
+        if (config.list && Array.isArray(config.list)) {
+          config.list.forEach(item => {
+            if (item.content && item.content.btn_text) {
+              const shouldDelete = Object.values(item.content.btn_text).some(text =>
+                  typeof text === 'string' && text.includes("Start Free Trial")
+              );
+              if (shouldDelete) {
+                delete item.content;
+              }
+            }
+          });
+        }
+      }
+      // --- 修改结束 ---
     }
 
     // --- 重新转义 ---
@@ -147,7 +163,7 @@ if (typeof $response !== "undefined") {
 
     body = JSON.stringify(data);
   } catch (e) {
-    //console.log("脚本执行出错: " + e.message);
+    // console.log("脚本执行出错: " + e.message);
   }
 
   $done({ body });
